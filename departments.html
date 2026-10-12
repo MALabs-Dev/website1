@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shoba-e-Banin and Shoba-e-Banat — Departments of Jamia Ayesha Siddiqua for boys and girls in Patancheru, Hyderabad." />
+  <title>Departments — Jamia Ayesha Siddiqua</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .dept-hero-banner {
+      padding: 60px 40px;
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .dept-hero-banner.banin {
+      background: linear-gradient(135deg, var(--green-dark), #2d8a52);
+    }
+    .dept-hero-banner.banat {
+      background: linear-gradient(135deg, #7b3f9e, #a855c8);
+    }
+    .dept-hero-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .dept-hero-banner .dept-icon { font-size: 3.5rem; display: block; margin-bottom: 12px; position: relative; }
+    .dept-hero-banner h2 { font-size: 2rem; color: var(--white); position: relative; margin-bottom: 6px; }
+    .dept-hero-banner .urdu-dept {
+      font-family: var(--font-urdu);
+      font-size: 1.4rem;
+      color: rgba(255,255,255,0.85);
+      direction: rtl;
+      display: block;
+      position: relative;
+      margin-bottom: 14px;
+    }
+    .dept-hero-banner p { color: rgba(255,255,255,0.8); max-width: 500px; margin: 0 auto; position: relative; }
+
+    .dept-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 80px;
+    }
+    .dept-info h3 { color: var(--green-dark); margin-bottom: 10px; }
+    .dept-info .urdu-sub {
+      font-family: var(--font-urdu);
+      font-size: 1rem;
+      color: var(--gold);
+      direction: rtl;
+      display: block;
+      margin-bottom: 14px;
+    }
+    .dept-info p { color: var(--text-mid); margin-bottom: 14px; font-size: 0.95rem; }
+    .dept-info ul { margin: 14px 0; }
+    .dept-info ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 0.92rem;
+      color: var(--text-mid);
+    }
+    .dept-info ul li::before { content: '✦'; color: var(--gold); font-size: 0.7rem; margin-top: 5px; flex-shrink: 0; }
+
+    .dept-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .dept-stat-box {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .dept-stat-box .num { font-family: var(--font-heading); font-size: 2rem; color: var(--green); display: block; }
+    .dept-stat-box .lbl { font-size: 0.82rem; color: var(--text-mid); }
+    .dept-stat-box.gold .num { color: var(--gold); }
+
+    .courses-list {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      margin-top: 20px;
+    }
+    .courses-list h4 { color: var(--green-dark); margin-bottom: 14px; border-bottom: 2px solid var(--green-light); padding-bottom: 10px; }
+    .course-pill {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green-dark);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 4px;
+      font-weight: 500;
+    }
+    .course-pill.gold { background: var(--gold-light); color: #7a5c00; }
+
+    @media (max-width: 768px) {
+      .dept-section { grid-template-columns: 1fr; }
+      .dept-hero-banner { padding: 40px 20px; }
+      .dept-hero-banner h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-top">
+    <p>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ — In the Name of Allah, the Most Gracious, the Most Merciful</p>
+  </div>
+  <div class="container">
+    <div class="header-brand">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-placeholder">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="name-urdu">جامعہ عائشہ صدیقہ للبنین والبنات</span>
+          <span class="name-en">Jamia Ayesha Siddiqua Lil Banin Wal Banat</span>
+          <span class="location">📍 Patancheru, Hyderabad, Telangana</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown"><a href="about.html">About Jamia</a>
+          <ul class="dropdown">
+            <li><a href="about.html#intro">Introduction</a></li>
+            <li><a href="about.html#mission">Mission & Vision</a></li>
+            <li><a href="about.html#leadership">Leadership</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="departments.html" class="active">Departments</a>
+          <ul class="dropdown">
+            <li><a href="departments.html#banin">Shoba-e-Banin (Boys)</a></li>
+            <li><a href="departments.html#banat">Shoba-e-Banat (Girls)</a></li>
+          </ul>
+        </li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="news.html">News & Notices</a></li>
+        <li><a href="donations.html">Donate</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" onclick="setLang('ur')">اردو</button>
+        </div>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="urdu-heading">ہمارے شعبہ جات</span>
+    <h1>Our Departments</h1>
+    <p>Dedicated learning environments for boys and girls</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>›</span><span>Departments</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SHOBA-E-BANIN
+     ============================================================ -->
+<section class="section" id="banin">
+  <div class="container">
+    <div class="dept-hero-banner banin">
+      <span class="dept-icon">🕌</span>
+      <h2>Shoba-e-Banin</h2>
+      <span class="urdu-dept">شعبۂ بنین — لڑکوں کا شعبہ</span>
+      <p>A focused Islamic educational department for boys, combining classical scholarship with modern skills</p>
+    </div>
+    <div class="dept-section">
+      <div class="dept-info">
+        <h3>About Shoba-e-Banin</h3>
+        <span class="urdu-sub">شعبۂ بنین کا تعارف</span>
+        <p>Shoba-e-Banin is the boys' department of Jamia Ayesha Siddiqua, offering a structured, rigorous, and spiritually enriching education for male students of all age groups. The department follows a carefully designed curriculum that integrates classical Islamic sciences with relevant modern knowledge.</p>
+        <p>Students in Shoba-e-Banin benefit from dedicated male faculty, a disciplined and focused environment, and a culture that emphasises brotherhood, mutual respect, and academic excellence rooted in Islamic values.</p>
+        <ul>
+          <li>Structured daily schedule including Fajr Salah and Quran recitation</li>
+          <li>Regular Tajweed and Hifz sessions with qualified Huffaz</li>
+          <li>Arabic and Urdu language development integrated throughout the curriculum</li>
+          <li>Regular assessments, examinations, and progress reporting</li>
+          <li>Extracurricular Islamic activities: debates, qira'at competitions, and more</li>
+          <li>Computer education and vocational skills alongside Deeni studies</li>
+        </ul>
+        <a href="admissions.html" class="btn btn-primary">Apply for Admission</a>
+      </div>
+      <div>
+        <div class="dept-stats">
+          <div class="dept-stat-box">
+            <span class="num">200+</span>
+            <span class="lbl">Students Enrolled</span>
+          </div>
+          <div class="dept-stat-box gold">
+            <span class="num">10+</span>
+            <span class="lbl">Qualified Faculty</span>
+          </div>
+          <div class="dept-stat-box">
+            <span class="num">4</span>
+            <span class="lbl">Programs Offered</span>
+          </div>
+          <div class="dept-stat-box gold">
+            <span class="num">100%</span>
+            <span class="lbl">Dedicated Environment</span>
+          </div>
+        </div>
+        <div class="courses-list">
+          <h4>📚 Courses Offered in Shoba-e-Banin</h4>
+          <span class="course-pill">📖 Hifz-ul-Quran</span>
+          <span class="course-pill">🎓 Alim Course</span>
+          <span class="course-pill">📜 Deeniyat Diploma</span>
+          <span class="course-pill gold">💻 Computer Education</span>
+          <span class="course-pill gold">🧵 Vocational Skills</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SHOBA-E-BANAT
+     ============================================================ -->
+<section class="section section-alt pattern-bg" id="banat">
+  <div class="container">
+    <div class="dept-hero-banner banat">
+      <span class="dept-icon">🌸</span>
+      <h2>Shoba-e-Banat</h2>
+      <span class="urdu-dept">شعبۂ بنات — لڑکیوں کا شعبہ</span>
+      <p>A safe, nurturing, and high-quality Islamic educational department dedicated to female students</p>
+    </div>
+    <div class="dept-section">
+      <div class="dept-info">
+        <h3>About Shoba-e-Banat</h3>
+        <span class="urdu-sub">شعبۂ بنات کا تعارف</span>
+        <p>Shoba-e-Banat is the girls' department of Jamia Ayesha Siddiqua — a dedicated, secure, and empowering educational space for female students. The department is led by experienced female scholars and educators who are committed to providing the highest standard of Islamic education in a completely appropriate and supportive environment.</p>
+        <p>Students in Shoba-e-Banat receive a comprehensive education that prepares them to be knowledgeable Muslimahs, capable of serving their families and communities with wisdom, integrity, and grace. The curriculum includes the full range of Islamic sciences alongside modern practical skills.</p>
+        <ul>
+          <li>Fully female faculty and administration — a completely secure environment</li>
+          <li>Comprehensive Hifz program with expert female Huffaz</li>
+          <li>Alimah and Fazilah courses following classical Islamic methodology</li>
+          <li>Momina Course for foundational Islamic knowledge and practice</li>
+          <li>Tailoring, embroidery, and skill development for economic empowerment</li>
+          <li>Regular parent-teacher communication and progress updates</li>
+        </ul>
+        <a href="admissions.html" class="btn btn-primary">Apply for Admission</a>
+      </div>
+      <div>
+        <div class="dept-stats">
+          <div class="dept-stat-box">
+            <span class="num">300+</span>
+            <span class="lbl">Students Enrolled</span>
+          </div>
+          <div class="dept-stat-box gold">
+            <span class="num">15+</span>
+            <span class="lbl">Female Faculty</span>
+          </div>
+          <div class="dept-stat-box">
+            <span class="num">6</span>
+            <span class="lbl">Programs Offered</span>
+          </div>
+          <div class="dept-stat-box gold">
+            <span class="num">🔒</span>
+            <span class="lbl">Fully Secure Campus</span>
+          </div>
+        </div>
+        <div class="courses-list">
+          <h4>🌸 Courses Offered in Shoba-e-Banat</h4>
+          <span class="course-pill">📖 Hifz-ul-Quran</span>
+          <span class="course-pill">🎓 Alimah Course</span>
+          <span class="course-pill">🎓 Fazilah Course</span>
+          <span class="course-pill">🌙 Momina Course</span>
+          <span class="course-pill gold">📜 Deeniyat Diploma</span>
+          <span class="course-pill gold">💻 Computer Education</span>
+          <span class="course-pill gold">🧵 Tailoring & Skills</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-placeholder" style="width:56px;height:56px;">
+          <svg viewBox="0 0 24 24" style="width:28px;height:28px;fill:var(--gold);"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        </div>
+        <span class="name-urdu" style="margin-top:10px;">جامعہ عائشہ صدیقہ للبنین والبنات</span>
+        <p style="margin-top:10px;">Patancheru, Hyderabad, Telangana.</p>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li><li><a href="admissions.html">Admissions</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Information</h4><ul>
+        <li><a href="news.html">News & Notices</a></li><li><a href="donations.html">Donate</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact</h4>
+        <div class="footer-contact-item"><span class="icon">📍</span><span>Patancheru, Hyderabad, Telangana</span></div>
+        <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+910000000000" style="color:rgba(255,255,255,0.7);">+91 00000 00000</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Jamia Ayesha Siddiqua Lil Banin Wal Banat. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a><a href="contact.html">Contact</a></div>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/910000000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>

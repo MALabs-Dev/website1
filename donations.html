@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Donate to Jamia Ayesha Siddiqua — Support Islamic education through UPI, bank transfer, or monthly donations." />
+  <title>Donate — Jamia Ayesha Siddiqua</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .donation-hero-strip {
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      padding: 50px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .donation-hero-strip::before {
+      content:'';position:absolute;inset:0;
+      background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .donation-hero-strip .ayah {
+      font-family: var(--font-arabic);
+      font-size: 1.6rem;
+      color: var(--gold-light);
+      direction: rtl;
+      display: block;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .donation-hero-strip p { color: rgba(255,255,255,0.8); font-style: italic; position: relative; }
+
+    .donation-methods-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+    .method-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      border-top: 4px solid var(--green);
+      transition: transform var(--transition);
+    }
+    .method-card:hover { transform: translateY(-5px); }
+    .method-card:nth-child(2) { border-top-color: var(--gold); }
+    .method-card:nth-child(3) { border-top-color: #2a52be; }
+    .method-icon { font-size: 2.8rem; display: block; margin-bottom: 14px; }
+    .method-card h3 { font-size: 1.1rem; color: var(--green-dark); margin-bottom: 8px; }
+    .method-card .urdu-method {
+      font-family: var(--font-urdu);
+      font-size: 0.9rem;
+      color: var(--gold);
+      direction: rtl;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .method-card p { font-size: 0.88rem; color: var(--text-mid); margin-bottom: 16px; }
+    .qr-area {
+      width: 140px;
+      height: 140px;
+      background: var(--green-light);
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+      border: 2px dashed var(--green);
+      padding: 10px;
+    }
+    .qr-area span { font-size: 3rem; }
+    .qr-area small { font-size: 0.7rem; color: var(--text-mid); text-align: center; margin-top: 4px; }
+    .upi-display {
+      background: var(--green-light);
+      border-radius: var(--radius);
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      color: var(--green-dark);
+      font-family: monospace;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .bank-details {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .bank-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #f5f5f5;
+      font-size: 0.92rem;
+    }
+    .bank-row:last-child { border-bottom: none; }
+    .bank-row .bl { color: var(--text-mid); }
+    .bank-row .bv { color: var(--text-dark); font-weight: 600; }
+
+    .amounts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+    .amount-btn {
+      padding: 14px;
+      background: var(--green-light);
+      border: 2px solid transparent;
+      border-radius: var(--radius);
+      text-align: center;
+      cursor: pointer;
+      transition: all var(--transition);
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--green-dark);
+    }
+    .amount-btn:hover, .amount-btn.selected {
+      background: var(--green);
+      color: var(--white);
+      border-color: var(--green);
+    }
+    .amount-label { display: block; font-size: 0.72rem; font-weight: 400; opacity: 0.8; margin-top: 2px; }
+
+    .monthly-box {
+      background: linear-gradient(135deg, #fff8e6, var(--gold-light));
+      border: 2px solid var(--gold);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+    }
+    .monthly-box h3 { color: #7a5c00; margin-bottom: 8px; }
+    .monthly-box .urdu-sub { font-family:var(--font-urdu);font-size:1rem;color:var(--gold);direction:rtl;display:block;margin-bottom:14px; }
+    .monthly-box p { font-size:0.92rem;color:var(--text-mid);margin-bottom:16px; }
+    .monthly-tiers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .tier {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-align: center;
+      border: 1.5px solid var(--gold);
+    }
+    .tier .amount { font-size: 1.3rem; font-weight: 700; color: #7a5c00; display: block; }
+    .tier .freq { font-size: 0.8rem; color: var(--text-mid); }
+    .tier .benefit { font-size: 0.82rem; color: var(--text-mid); margin-top: 6px; }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .impact-card {
+      text-align: center;
+      padding: 28px 20px;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+    .impact-icon { font-size: 2.2rem; display: block; margin-bottom: 12px; }
+    .impact-card h4 { font-size: 0.95rem; color: var(--green-dark); margin-bottom: 6px; }
+    .impact-card p { font-size: 0.85rem; color: var(--text-mid); }
+
+    @media (max-width: 768px) {
+      .donation-methods-grid { grid-template-columns: 1fr; }
+      .amounts-grid { grid-template-columns: repeat(2, 1fr); }
+      .monthly-tiers { grid-template-columns: 1fr; }
+      .impact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-top">
+    <p>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ — In the Name of Allah, the Most Gracious, the Most Merciful</p>
+  </div>
+  <div class="container">
+    <div class="header-brand">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-placeholder"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg></div>
+        <div class="brand-text">
+          <span class="name-urdu">جامعہ عائشہ صدیقہ للبنین والبنات</span>
+          <span class="name-en">Jamia Ayesha Siddiqua Lil Banin Wal Banat</span>
+          <span class="location">📍 Patancheru, Hyderabad, Telangana</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown"><a href="about.html">About Jamia</a><ul class="dropdown"><li><a href="about.html#intro">Introduction</a></li><li><a href="about.html#mission">Mission & Vision</a></li><li><a href="about.html#leadership">Leadership</a></li></ul></li>
+        <li class="has-dropdown"><a href="departments.html">Departments</a><ul class="dropdown"><li><a href="departments.html#banin">Shoba-e-Banin</a></li><li><a href="departments.html#banat">Shoba-e-Banat</a></li></ul></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="news.html">News & Notices</a></li>
+        <li><a href="donations.html" class="active">Donate</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="lang-switcher"><button class="lang-btn active" onclick="setLang('en')">EN</button><button class="lang-btn" onclick="setLang('ur')">اردو</button></div>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="urdu-heading">صدقہ جاریہ</span>
+    <h1>Support Islamic Education</h1>
+    <p>Every donation is an ongoing charity — Sadaqah Jariyah</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Donate</span></div>
+  </div>
+</section>
+
+<!-- AYAH STRIP -->
+<div class="donation-hero-strip">
+  <div class="container">
+    <span class="ayah">«مَنْ ذَا الَّذِي يُقْرِضُ اللَّهَ قَرْضًا حَسَنًا فَيُضَاعِفَهُ لَهُ أَضْعَافًا كَثِيرَةً»</span>
+    <p>"Who is it that will lend to Allah a goodly loan so He may multiply it for him many times over?" — Surah Al-Baqarah 2:245</p>
+  </div>
+</div>
+
+<!-- PAYMENT METHODS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="urdu-title">تعاون کے طریقے</span>
+      <h2>Ways to Donate</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="donation-methods-grid">
+
+      <!-- UPI -->
+      <div class="method-card">
+        <span class="method-icon">📱</span>
+        <h3>UPI / QR Code</h3>
+        <span class="urdu-method">یو پی آئی / کیو آر کوڈ</span>
+        <p>Scan the QR code with any UPI app — Google Pay, PhonePe, Paytm, BHIM</p>
+        <div class="qr-area">
+          <!-- Replace with: <img src="images/upi-qr.png" alt="UPI QR Code" style="width:100%;"> -->
+          <span>📲</span>
+          <small>Place your UPI QR code image here</small>
+        </div>
+        <span class="upi-display">jamia@upi</span>
+        <!-- Replace with actual UPI ID -->
+        <p style="font-size:0.78rem;color:var(--text-light);margin:0;">Instant transfer — available 24/7</p>
+      </div>
+
+      <!-- Bank Transfer -->
+      <div class="method-card">
+        <span class="method-icon">🏦</span>
+        <h3>Bank Transfer / NEFT</h3>
+        <span class="urdu-method">بینک ٹرانسفر</span>
+        <p>Transfer directly to the Jamia's bank account via NEFT, RTGS or IMPS</p>
+        <div class="bank-details" style="text-align:left;margin-bottom:14px;">
+          <div class="bank-row"><span class="bl">Account Name</span><span class="bv" style="font-size:0.85rem;">Jamia Ayesha Siddiqua</span></div>
+          <div class="bank-row"><span class="bl">Account No.</span><span class="bv">XXXX XXXX XXXX</span></div>
+          <!-- Replace XXXX with actual account number -->
+          <div class="bank-row"><span class="bl">IFSC Code</span><span class="bv">XXXXXXXX</span></div>
+          <!-- Replace with actual IFSC -->
+          <div class="bank-row"><span class="bl">Bank</span><span class="bv">Bank Name</span></div>
+          <!-- Replace with actual bank name -->
+          <div class="bank-row"><span class="bl">Branch</span><span class="bv">Patancheru</span></div>
+        </div>
+        <p style="font-size:0.78rem;color:var(--text-light);">Please WhatsApp payment confirmation after transfer</p>
+      </div>
+
+      <!-- Monthly Donation -->
+      <div class="method-card">
+        <span class="method-icon">🗓️</span>
+        <h3>Monthly Donation</h3>
+        <span class="urdu-method">ماہانہ چندہ</span>
+        <p>Set up a recurring monthly donation — sponsor a student's education every month</p>
+        <div class="amounts-grid" style="grid-template-columns:1fr 1fr;">
+          <div class="amount-btn">₹500<span class="amount-label">/ month</span></div>
+          <div class="amount-btn">₹1,000<span class="amount-label">/ month</span></div>
+          <div class="amount-btn">₹2,500<span class="amount-label">/ month</span></div>
+          <div class="amount-btn">₹5,000<span class="amount-label">/ month</span></div>
+        </div>
+        <a href="contact.html" class="btn btn-gold" style="width:100%;text-align:center;margin-top:8px;">Become a Monthly Donor</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MONTHLY DONOR SECTION -->
+<section class="section section-alt" id="monthly">
+  <div class="container">
+    <div class="section-header">
+      <span class="urdu-title">ماہانہ تعاون</span>
+      <h2>Monthly Donor Program</h2>
+      <div class="divider"></div>
+      <p>A small monthly commitment makes a huge difference to a student's future</p>
+    </div>
+    <div class="monthly-box">
+      <h3>💚 Sponsor a Student's Education</h3>
+      <span class="urdu-sub">ایک طالب علم کی تعلیم میں مستقل حصہ دار بنیں</span>
+      <p>Our monthly donor program allows well-wishers to become ongoing supporters of Islamic education. Your monthly contribution helps cover tuition, books, and basic needs for students who cannot afford education. Every rupee you give is Sadaqah Jariyah — continuing charity that benefits you even after this life.</p>
+      <div class="monthly-tiers">
+        <div class="tier">
+          <span class="amount">₹500</span>
+          <span class="freq">per month</span>
+          <p class="benefit">Contributes to stationery & books for one student</p>
+        </div>
+        <div class="tier">
+          <span class="amount">₹1,000</span>
+          <span class="freq">per month</span>
+          <p class="benefit">Covers monthly fees for a needy student</p>
+        </div>
+        <div class="tier">
+          <span class="amount">₹2,500+</span>
+          <span class="freq">per month</span>
+          <p class="benefit">Full scholarship support for a student</p>
+        </div>
+      </div>
+      <p style="font-size:0.88rem;color:var(--text-mid);">To enrol as a monthly donor, contact us via WhatsApp or phone and we will set up a convenient recurring payment arrangement.</p>
+      <a href="https://wa.me/910000000000" class="btn btn-gold" target="_blank" rel="noopener">💬 WhatsApp to Become a Monthly Donor</a>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="urdu-title">آپ کے تعاون کا اثر</span>
+      <h2>Your Donation's Impact</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <span class="impact-icon">📖</span>
+        <h4>Preserve the Quran</h4>
+        <p>Your support helps train the next generation of Huffaz — guardians of the Holy Quran.</p>
+      </div>
+      <div class="impact-card">
+        <span class="impact-icon">🎓</span>
+        <h4>Educate Scholars</h4>
+        <p>Fund the education of future Alimahs and Islamic scholars who will guide communities.</p>
+      </div>
+      <div class="impact-card">
+        <span class="impact-icon">💼</span>
+        <h4>Empower Women</h4>
+        <p>Help girls gain practical skills — tailoring, computers — for economic independence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo-placeholder" style="width:56px;height:56px;"><svg viewBox="0 0 24 24" style="width:28px;height:28px;fill:var(--gold);"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg></div><span class="name-urdu" style="margin-top:10px;">جامعہ عائشہ صدیقہ للبنین والبنات</span><p style="margin-top:10px;">Patancheru, Hyderabad, Telangana.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="courses.html">Courses</a></li><li><a href="admissions.html">Admissions</a></li></ul></div>
+      <div class="footer-col"><h4>Information</h4><ul><li><a href="news.html">News</a></li><li><a href="donations.html">Donate</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><span class="icon">📍</span><span>Patancheru, Hyderabad, Telangana</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+910000000000" style="color:rgba(255,255,255,0.7);">+91 00000 00000</a></div></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Jamia Ayesha Siddiqua Lil Banin Wal Banat. All rights reserved.</p><div class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a><a href="contact.html">Contact</a></div></div>
+  </div>
+</footer>
+<a href="https://wa.me/910000000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>

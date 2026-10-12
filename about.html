@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Jamia Ayesha Siddiqua Lil Banin Wal Banat — Mission, Vision, Leadership, and introduction in English, Urdu, Arabic, and Hindi." />
+  <title>About — Jamia Ayesha Siddiqua</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ---- LEADERSHIP CARDS ---- */
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .leader-card {
+      text-align: center;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 34px 24px;
+      box-shadow: var(--shadow-sm);
+      border-top: 4px solid var(--green);
+      transition: transform var(--transition);
+    }
+    .leader-card:hover { transform: translateY(-4px); }
+    .leader-avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green-light), #d4edda);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 2.4rem;
+      border: 3px solid var(--gold);
+    }
+    .leader-card h3 { font-size: 1.05rem; color: var(--green-dark); margin-bottom: 4px; }
+    .leader-card .role {
+      font-size: 0.85rem;
+      color: var(--gold);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .leader-card p { font-size: 0.88rem; color: var(--text-mid); }
+
+    /* ---- MISSION/VISION ---- */
+    .mv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .mv-card {
+      padding: 34px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+    .mv-card.mission { background: linear-gradient(135deg, var(--green-light), #d4edda); border-left: 5px solid var(--green); }
+    .mv-card.vision  { background: linear-gradient(135deg, var(--gold-light), #faefd3); border-left: 5px solid var(--gold); }
+    .mv-card h3 { font-size: 1.3rem; margin-bottom: 6px; }
+    .mv-card.mission h3 { color: var(--green-dark); }
+    .mv-card.vision h3  { color: #8b6914; }
+    .mv-card .urdu-sub {
+      font-family: var(--font-urdu);
+      font-size: 1rem;
+      color: var(--text-mid);
+      direction: rtl;
+      display: block;
+      margin-bottom: 14px;
+    }
+    .mv-card p { font-size: 0.95rem; color: var(--text-mid); line-height: 1.8; }
+
+    /* ---- TAB CONTENT ---- */
+    .intro-content {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-sm);
+    }
+    .intro-content h2 {
+      color: var(--green-dark);
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+    .intro-content p {
+      color: var(--text-mid);
+      margin-bottom: 16px;
+      font-size: 0.97rem;
+      line-height: 1.85;
+    }
+    .intro-content.rtl p { direction: rtl; font-size: 1.05rem; line-height: 2; }
+    .intro-content.rtl h2 { direction: rtl; }
+
+    /* ---- VALUES ---- */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .value-item {
+      text-align: center;
+      padding: 24px 16px;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+    .value-icon { font-size: 2rem; display: block; margin-bottom: 10px; }
+    .value-item h4 { font-size: 0.95rem; color: var(--green-dark); margin-bottom: 4px; }
+    .value-item .urdu-val {
+      font-family: var(--font-urdu);
+      font-size: 0.88rem;
+      color: var(--gold);
+      direction: rtl;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .leadership-grid { grid-template-columns: 1fr; }
+      .mv-grid { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr 1fr; }
+      .intro-content { padding: 24px 18px; }
+    }
+    @media (max-width: 480px) {
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-top">
+    <p>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ — In the Name of Allah, the Most Gracious, the Most Merciful</p>
+  </div>
+  <div class="container">
+    <div class="header-brand">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-placeholder">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="name-urdu">جامعہ عائشہ صدیقہ للبنین والبنات</span>
+          <span class="name-en">Jamia Ayesha Siddiqua Lil Banin Wal Banat</span>
+          <span class="location">📍 Patancheru, Hyderabad, Telangana</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="about.html" class="active">About Jamia</a>
+          <ul class="dropdown">
+            <li><a href="about.html#intro">Introduction</a></li>
+            <li><a href="about.html#mission">Mission & Vision</a></li>
+            <li><a href="about.html#leadership">Leadership</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="departments.html">Departments</a>
+          <ul class="dropdown">
+            <li><a href="departments.html#banin">Shoba-e-Banin (Boys)</a></li>
+            <li><a href="departments.html#banat">Shoba-e-Banat (Girls)</a></li>
+          </ul>
+        </li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="news.html">News & Notices</a></li>
+        <li><a href="donations.html">Donate</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" onclick="setLang('ur')">اردو</button>
+        </div>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="urdu-heading">ہمارے بارے میں</span>
+    <h1>About Jamia Ayesha Siddiqua</h1>
+    <p>Our history, mission, vision, and leadership — in multiple languages</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>About</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTRODUCTION — TABBED
+     ============================================================ -->
+<section class="section" id="intro">
+  <div class="container">
+    <div class="section-header">
+      <span class="urdu-title">تعارف</span>
+      <h2>Introduction to the Jamia</h2>
+      <div class="divider"></div>
+      <p>Read about our institution in your preferred language</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" role="tab" aria-selected="true"  onclick="switchTab('en')">English</button>
+      <button class="tab-btn"        role="tab" aria-selected="false" onclick="switchTab('ur')">اردو</button>
+      <button class="tab-btn"        role="tab" aria-selected="false" onclick="switchTab('ar')">عربي</button>
+      <button class="tab-btn"        role="tab" aria-selected="false" onclick="switchTab('hi')">हिन्दी</button>
+    </div>
+
+    <!-- English -->
+    <div class="tab-panel active" id="tab-en">
+      <div class="intro-content">
+        <h2>Jamia Ayesha Siddiqua Lil Banin Wal Banat</h2>
+        <p>Jamia Ayesha Siddiqua Lil Banin Wal Banat is an Islamic educational institution established in Patancheru, Hyderabad, Telangana, under the guidance and leadership of <strong>Maulana Muhammad Saleem Rahmani</strong>. The Jamia is dedicated to providing authentic, comprehensive Islamic education to both boys and girls in a safe, nurturing, and spiritually enriching environment.</p>
+        <p>Rooted in the traditions of classical Islamic scholarship, the Jamia offers a full range of educational programs — from Hifz-ul-Quran and the prestigious Alimah and Fazilah courses to practical modern skills such as computer education and tailoring. Our goal is to produce graduates who are not only learned in Islamic sciences but are also equipped to navigate the demands of modern life with confidence and integrity.</p>
+        <p>The Jamia operates two dedicated departments: <strong>Shoba-e-Banin</strong> for boys and <strong>Shoba-e-Banat</strong> for girls, ensuring a focused, appropriate, and high-quality learning environment for each. The institution is committed to transparency, community trust, and the highest standards of Islamic character and conduct.</p>
+        <p>We warmly invite parents, students, and well-wishers to be part of this noble endeavour — through enrollment, support, or generous donation. May Allah bless our efforts and grant success to our students in this world and the next. Ameen.</p>
+      </div>
+    </div>
+
+    <!-- Urdu -->
+    <div class="tab-panel" id="tab-ur">
+      <div class="intro-content rtl urdu">
+        <h2>جامعہ عائشہ صدیقہ للبنین والبنات</h2>
+        <p>جامعہ عائشہ صدیقہ للبنین والبنات ایک اسلامی تعلیمی ادارہ ہے جو پٹانچیرو، حیدرآباد، تلنگانہ میں قائم کیا گیا ہے۔ یہ ادارہ مولانا محمد سلیم رحمانی کی سرپرستی اور رہنمائی میں ڈھیروں طلبہ و طالبات کو معیاری دینی تعلیم فراہم کر رہا ہے۔</p>
+        <p>جامعہ کا بنیادی مقصد قرآن و سنت کی روشنی میں علم دین کو عام کرنا اور ایسے فارغین تیار کرنا ہے جو دین و دنیا دونوں میں کامیاب ہوں۔ ادارے میں حفظ القرآن، عالمہ، فاضلہ، مومنہ کورس، ایک سالہ دینیات ڈپلومہ، کمپیوٹر تعلیم اور سلائی کڑھائی جیسے مختلف شعبہ جات موجود ہیں۔</p>
+        <p>جامعہ میں دو الگ الگ شعبہ جات قائم ہیں: <strong>شعبۂ بنین</strong> (لڑکوں کے لیے) اور <strong>شعبۂ بنات</strong> (لڑکیوں کے لیے)، تاکہ ہر طالب علم کو مناسب اور معیاری تعلیمی ماحول میسر ہو۔</p>
+        <p>ہم تمام والدین، طلبہ و طالبات اور خیرخواہان کو دعوت دیتے ہیں کہ وہ اس نیک مشن میں شامل ہوں — خواہ داخلے کے ذریعے، تعاون سے، یا مالی امداد کے ذریعے۔ اللہ تعالیٰ ہمارے اس ادارے کو قبول فرمائے اور ہمارے طلبہ کو دنیا و آخرت میں کامیابی عطا فرمائے۔ آمین۔</p>
+      </div>
+    </div>
+
+    <!-- Arabic -->
+    <div class="tab-panel" id="tab-ar">
+      <div class="intro-content rtl arabic">
+        <h2>جامعة عائشة الصديقة للبنين والبنات</h2>
+        <p>جامعة عائشة الصديقة للبنين والبنات مؤسسة تعليمية إسلامية تأسست في باتانشيرو، حيدر آباد، تلنغانا، بالهند، تحت إشراف وقيادة <strong>المولانا محمد سليم رحماني</strong>. تسعى الجامعة إلى تقديم تعليم إسلامي أصيل وشامل للطلاب والطالبات في بيئة آمنة ومثرية روحياً.</p>
+        <p>تضم الجامعة مناهج متنوعة تشمل حفظ القرآن الكريم، ودورات العالمة والفاضلة، ودبلوم سنوي في الدينيات، إضافة إلى التعليم الحاسوبي والتدريب المهني؛ مما يُعدّ الطلاب لمواجهة متطلبات الحياة المعاصرة بثقة وأخلاق إسلامية رفيعة.</p>
+        <p>يشتمل الجامعة على قسمين مستقلين: <strong>شعبة البنين</strong> و<strong>شعبة البنات</strong>، لضمان بيئة تعليمية ملائمة وعالية الجودة لكلٍّ منهما.</p>
+        <p>ندعو الآباء والطلاب والمحسنين للمشاركة في هذا المشروع النبيل — سواء بالالتحاق بالدراسة أو بالدعم والمساهمة المادية. اللهم تقبّل منا وأعِن طلابنا على النجاح في الدنيا والآخرة. آمين.</p>
+      </div>
+    </div>
+
+    <!-- Hindi -->
+    <div class="tab-panel" id="tab-hi">
+      <div class="intro-content">
+        <h2>जामिया आयशा सिद्दीका लिल बनीन वल बनात</h2>
+        <p>जामिया आयशा सिद्दीका लिल बनीन वल बनात एक इस्लामी शैक्षणिक संस्थान है जो पटानचेरू, हैदराबाद, तेलंगाना में स्थापित किया गया है। यह संस्थान <strong>मौलाना मुहम्मद सलीम रहमानी</strong> के नेतृत्व और मार्गदर्शन में बच्चों और बच्चियों दोनों को उत्कृष्ट दीनी शिक्षा प्रदान कर रहा है।</p>
+        <p>जामिया में हिफ्ज़ उल-क़ुरआन, आलिमह और फ़ाज़िलह कोर्स, मोमिना कोर्स, एक वर्षीय दीनियात डिप्लोमा, कंप्यूटर शिक्षा और सिलाई-कढ़ाई जैसे विविध पाठ्यक्रम उपलब्ध हैं। हमारा लक्ष्य ऐसे स्नातक तैयार करना है जो दीन और दुनिया दोनों में सफल हों।</p>
+        <p>संस्थान में दो अलग विभाग हैं: <strong>शोबा-ए-बनीन</strong> (लड़कों के लिए) और <strong>शोबा-ए-बनात</strong> (लड़कियों के लिए), जिससे प्रत्येक विद्यार्थी को उचित और उच्च-गुणवत्ता वाला शैक्षिक माहौल मिले।</p>
+        <p>हम सभी अभिभावकों, छात्रों और शुभचिंतकों को इस नेक कार्य में भाग लेने के लिए आमंत्रित करते हैं। अल्लाह हमारे प्रयासों को स्वीकार करे और हमारे छात्रों को इस दुनिया और आखिरत में कामयाबी दे। आमीन।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MISSION & VISION
+     ============================================================ -->
+<section class="section section-alt pattern-bg" id="mission">
+  <div class="container">
+    <div class="section-header">
+      <span class="urdu-title">مشن اور وژن</span>
+      <h2>Our Mission & Vision</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="mv-grid">
+      <div class="mv-card mission">
+        <h3>🎯 Our Mission</h3>
+        <span class="urdu-sub">ہمارا مشن</span>
+        <p>To provide authentic, high-quality Islamic education rooted in the Quran and Sunnah, nurturing students who embody Islamic values, strong character, and practical skills — enabling them to serve their families, communities, and the Ummah with knowledge and integrity.</p>
+      </div>
+      <div class="mv-card vision">
+        <h3>🌟 Our Vision</h3>
+        <span class="urdu-sub">ہمارا وژن</span>
+        <p>To be a leading Islamic educational institution in Telangana that produces scholars, leaders, and community builders — graduates who are deeply grounded in their faith, modern in their outlook, and committed to the welfare of the society around them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CORE VALUES
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="urdu-title">ہماری اقدار</span>
+      <h2>Our Core Values</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="values-grid">
+      <div class="value-item">
+        <span class="value-icon">📖</span>
+        <h4>Knowledge</h4>
+        <span class="urdu-val">علم</span>
+      </div>
+      <div class="value-item">
+        <span class="value-icon">❤️</span>
+        <h4>Character</h4>
+        <span class="urdu-val">اخلاق</span>
+      </div>
+      <div class="value-item">
+        <span class="value-icon">🤝</span>
+        <h4>Integrity</h4>
+        <span class="urdu-val">دیانت</span>
+      </div>
+      <div class="value-item">
+        <span class="value-icon">🌍</span>
+        <h4>Service</h4>
+        <span class="urdu-val">خدمت</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LEADERSHIP
+     ============================================================ -->
+<section class="section section-alt" id="leadership">
+  <div class="container">
+    <div class="section-header">
+      <span class="urdu-title">قیادت</span>
+      <h2>Our Leadership</h2>
+      <div class="divider"></div>
+      <p>Guided by experienced Islamic scholars and educators</p>
+    </div>
+    <div class="leadership-grid">
+      <div class="leader-card">
+        <div class="leader-avatar">👳</div>
+        <h3>Maulana Muhammad Saleem Rahmani</h3>
+        <span class="role">Founder & Nazim</span>
+        <!-- Replace with Urdu title if needed -->
+        <p class="urdu" style="font-size:0.9rem;margin-bottom:8px;">بانی و ناظم</p>
+        <p>The founder and principal authority of the Jamia, Maulana Rahmani has dedicated his life to the propagation of Islamic education in Telangana.</p>
+      </div>
+      <div class="leader-card">
+        <div class="leader-avatar">🧑‍🏫</div>
+        <h3>[Principal Name]</h3>
+        <!-- Replace with actual name -->
+        <span class="role">Principal</span>
+        <p class="urdu" style="font-size:0.9rem;margin-bottom:8px;">مہتمم</p>
+        <p>Oversees the day-to-day administration and academic excellence of the Jamia, ensuring the highest standards of Islamic education.</p>
+      </div>
+      <div class="leader-card">
+        <div class="leader-avatar">👩‍🏫</div>
+        <h3>[Head of Banat]</h3>
+        <!-- Replace with actual name -->
+        <span class="role">Head — Shoba-e-Banat</span>
+        <p class="urdu" style="font-size:0.9rem;margin-bottom:8px;">شعبۂ بنات کی انچارج</p>
+        <p>Leads the girls' department with compassion and expertise, fostering a nurturing and spiritually enriching environment for female students.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-placeholder" style="width:56px;height:56px;">
+          <svg viewBox="0 0 24 24" style="width:28px;height:28px;fill:var(--gold);"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        </div>
+        <span class="name-urdu" style="margin-top:10px;">جامعہ عائشہ صدیقہ للبنین والبنات</span>
+        <p style="margin-top:10px;">Jamia Ayesha Siddiqua Lil Banin Wal Banat — Patancheru, Hyderabad, Telangana.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Jamia</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="news.html">News & Notices</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="donations.html">Donate</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item"><span class="icon">📍</span><span>Patancheru, Hyderabad, Telangana</span></div>
+        <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+910000000000" style="color:rgba(255,255,255,0.7);">+91 00000 00000</a></div>
+        <div class="footer-contact-item"><span class="icon">✉️</span><a href="mailto:info@jamiaayesha.org" style="color:rgba(255,255,255,0.7);">info@jamiaayesha.org</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Jamia Ayesha Siddiqua Lil Banin Wal Banat. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/910000000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>
