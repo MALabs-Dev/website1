@@ -436,7 +436,7 @@
      ============================================================ -->
 <header class="site-header">
   <div class="header-top">
-    <p>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ — In the Name of Allah, the Most Gracious, the Most Merciful</p>
+    <p data-i18n="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ — In the Name of Allah, the Most Gracious, the Most Merciful</p>
   </div>
   <div class="container">
     <div class="header-brand">
@@ -449,8 +449,8 @@
         </div>
         <div class="brand-text">
           <span class="name-urdu">جامعہ عائشہ صدیقہ للبنین والبنات</span>
-          <span class="name-en">Jamia Ayesha Siddiqua Lil Banin Wal Banat</span>
-          <span class="location">📍 Patancheru, Hyderabad, Telangana</span>
+          <span class="name-en" data-i18n="brand-name-en">Jamia Ayesha Siddiqua Lil Banin Wal Banat</span>
+          <span class="location" data-i18n="brand-location">📍 Patancheru, Hyderabad, Telangana</span>
         </div>
       </a>
     </div>
@@ -458,31 +458,32 @@
   <nav class="main-nav">
     <div class="container nav-inner">
       <ul class="nav-list" id="navList">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html" class="active" data-i18n="nav-home">Home</a></li>
         <li class="has-dropdown">
-          <a href="about.html">About Jamia</a>
+          <a href="about.html" data-i18n="nav-about">About Jamia</a>
           <ul class="dropdown">
-            <li><a href="about.html#intro">Introduction</a></li>
+            <li><a href="about.html#intro" data-i18n="nav-intro">Introduction</a></li>
             <li><a href="about.html#mission">Mission & Vision</a></li>
-            <li><a href="about.html#leadership">Leadership</a></li>
+            <li><a href="about.html#leadership" data-i18n="nav-leadership">Leadership</a></li>
           </ul>
         </li>
         <li class="has-dropdown">
-          <a href="departments.html">Departments</a>
+          <a href="departments.html" data-i18n="nav-departments">Departments</a>
           <ul class="dropdown">
-            <li><a href="departments.html#banin">Shoba-e-Banin (Boys)</a></li>
-            <li><a href="departments.html#banat">Shoba-e-Banat (Girls)</a></li>
+            <li><a href="departments.html#banin" data-i18n="nav-banin">Shoba-e-Banin (Boys)</a></li>
+            <li><a href="departments.html#banat" data-i18n="nav-banat">Shoba-e-Banat (Girls)</a></li>
           </ul>
         </li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="courses.html" data-i18n="nav-courses">Courses</a></li>
+        <li><a href="admissions.html" data-i18n="nav-admissions">Admissions</a></li>
         <li><a href="news.html">News & Notices</a></li>
-        <li><a href="donations.html">Donate</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donations.html" data-i18n="nav-donate">Donate</a></li>
+        <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
         <div class="lang-switcher">
-          <button class="lang-btn active" onclick="setLang('en')">EN</button>
-          <button class="lang-btn" onclick="setLang('ur')">اردو</button>
+          <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" data-lang="ur" onclick="setLang('ur')">اردو</button>
+          <button class="lang-btn" data-lang="ar" onclick="setLang('ar')">عربي</button>
         </div>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -499,14 +500,14 @@
   <div class="hero-decor"></div>
   <div class="container">
     <div class="hero-content">
-      <span class="hero-badge">Est. — Patancheru, Hyderabad</span>
-      <span class="hero-urdu">معیاری دینی تعلیم، بہترین تربیت، روشن مستقبل</span>
-      <h1>Quality Islamic Education, Excellent Character, Bright Future</h1>
-      <span class="hero-name-urdu">جامعہ عائشہ صدیقہ للبنین والبنات</span>
-      <p>A dedicated institution nurturing the next generation of Muslim scholars and upright citizens through authentic Deeni education, moral development, and modern skills.</p>
+      <span class="hero-badge" data-i18n="hero-badge">Est. — Patancheru, Hyderabad</span>
+      <span class="hero-urdu" data-i18n="hero-urdu">معیاری دینی تعلیم، بہترین تربیت، روشن مستقبل</span>
+      <h1 data-i18n="hero-h1">Quality Islamic Education, Excellent Character, Bright Future</h1>
+      <span class="hero-name-urdu" data-i18n="hero-name">جامعہ عائشہ صدیقہ للبنین والبنات</span>
+      <p data-i18n="hero-desc">A dedicated institution nurturing the next generation of Muslim scholars and upright citizens through authentic Deeni education, moral development, and modern skills.</p>
       <div class="hero-actions">
-        <a href="admissions.html" class="btn btn-gold">Apply for Admission</a>
-        <a href="donations.html" class="btn btn-outline">Donate Now</a>
+        <a href="admissions.html" class="btn btn-gold" data-i18n="hero-btn-apply">Apply for Admission</a>
+        <a href="donations.html" class="btn btn-outline" data-i18n="hero-btn-donate">Donate Now</a>
       </div>
     </div>
   </div>
@@ -520,15 +521,15 @@
     <div class="stats-grid">
       <div class="stat-item">
         <span class="stat-number">500+</span>
-        <span class="stat-label">Students Enrolled</span>
+        <span class="stat-label" data-i18n="stat-students">Students Enrolled</span>
       </div>
       <div class="stat-item">
         <span class="stat-number">6</span>
-        <span class="stat-label">Educational Programs</span>
+        <span class="stat-label" data-i18n="stat-programs">Educational Programs</span>
       </div>
       <div class="stat-item">
         <span class="stat-number">20+</span>
-        <span class="stat-label">Qualified Teachers</span>
+        <span class="stat-label" data-i18n="stat-teachers">Qualified Teachers</span>
       </div>
       <div class="stat-item">
         <span class="stat-number">2</span>
@@ -554,20 +555,20 @@
       </div>
       <div class="about-text">
         <div class="section-header" style="text-align:left;margin-bottom:24px;">
-          <span class="urdu-title">ہمارے بارے میں</span>
-          <h2>About Jamia Ayesha Siddiqua</h2>
+          <span class="urdu-title" data-i18n="about-section-title">ہمارے بارے میں</span>
+          <h2 data-i18n="about-h2">About Jamia Ayesha Siddiqua</h2>
           <div class="divider" style="margin:14px 0;"></div>
         </div>
-        <p class="urdu-quote">علم حاصل کرنا ہر مسلمان مرد اور عورت پر فرض ہے</p>
+        <p class="urdu-quote" data-i18n="about-quote">علم حاصل کرنا ہر مسلمان مرد اور عورت پر فرض ہے</p>
         <p>Jamia Ayesha Siddiqua Lil Banin Wal Banat is a premier Islamic educational institution located in Patancheru, Hyderabad, Telangana. Founded under the guidance of <strong>Maulana Muhammad Saleem Rahmani</strong>, the Jamia is dedicated to providing comprehensive Deeni education to both boys and girls.</p>
         <ul class="about-points">
-          <li>Separate departments for boys (Shoba-e-Banin) and girls (Shoba-e-Banat)</li>
-          <li>Authentic Islamic curriculum rooted in the Quran and Sunnah</li>
-          <li>Modern skills including Computer Education and Tailoring</li>
-          <li>Safe, nurturing, and spiritually enriching environment</li>
-          <li>Qualified, experienced, and dedicated teaching staff</li>
+          <li data-i18n="about-li1">Separate departments for boys (Shoba-e-Banin) and girls (Shoba-e-Banat)</li>
+          <li data-i18n="about-li2">Authentic Islamic curriculum rooted in the Quran and Sunnah</li>
+          <li data-i18n="about-li3">Modern skills including Computer Education and Tailoring</li>
+          <li data-i18n="about-li4">Safe, nurturing, and spiritually enriching environment</li>
+          <li data-i18n="about-li5">Qualified, experienced, and dedicated teaching staff</li>
         </ul>
-        <a href="about.html" class="btn btn-primary">Read More About Us</a>
+        <a href="about.html" class="btn btn-primary" data-i18n="about-btn">Read More About Us</a>
       </div>
     </div>
   </div>
@@ -579,15 +580,15 @@
 <section class="section section-alt pattern-bg">
   <div class="container">
     <div class="section-header">
-      <span class="urdu-title">ہمارے کورسز</span>
-      <h2>Educational Programs</h2>
+      <span class="urdu-title" data-i18n="courses-section-title">ہمارے کورسز</span>
+      <h2 data-i18n="courses-h2">Educational Programs</h2>
       <div class="divider"></div>
-      <p>Comprehensive Islamic and modern education programs for boys and girls</p>
+      <p data-i18n="courses-sub">Comprehensive Islamic and modern education programs for boys and girls</p>
     </div>
     <div class="courses-grid">
       <div class="course-card">
         <span class="course-icon">📖</span>
-        <h3>Hifz-ul-Quran</h3>
+        <h3 data-i18n="course1-h3">Hifz-ul-Quran</h3>
         <span class="urdu-name">حفظ القرآن</span>
         <p>Complete memorization of the Holy Quran under expert Huffaz with Tajweed and proper recitation rules.</p>
         <a href="courses.html#hifz" class="btn btn-primary" style="margin-top:14px;font-size:0.85rem;padding:8px 18px;">Learn More</a>
@@ -601,21 +602,21 @@
       </div>
       <div class="course-card">
         <span class="course-icon">🌙</span>
-        <h3>Momina Course</h3>
+        <h3 data-i18n="course3-h3">Momina Course</h3>
         <span class="urdu-name">مومنہ کورس</span>
         <p>A foundational course in Islamic beliefs, practice, and character building for young Muslim women.</p>
         <a href="courses.html#momina" class="btn btn-primary" style="margin-top:14px;font-size:0.85rem;padding:8px 18px;">Learn More</a>
       </div>
       <div class="course-card">
         <span class="course-icon">📜</span>
-        <h3>One-Year Diploma in Deeniyat</h3>
+        <h3 data-i18n="course4-h3">One-Year Diploma in Deeniyat</h3>
         <span class="urdu-name">ایک سالہ دینیات ڈپلومہ</span>
         <p>An intensive one-year program covering the essential pillars of Islamic knowledge and practice.</p>
         <a href="courses.html#diploma" class="btn btn-primary" style="margin-top:14px;font-size:0.85rem;padding:8px 18px;">Learn More</a>
       </div>
       <div class="course-card">
         <span class="course-icon">💻</span>
-        <h3>Computer Education</h3>
+        <h3 data-i18n="course5-h3">Computer Education</h3>
         <span class="urdu-name">کمپیوٹر تعلیم</span>
         <p>Modern computer literacy and digital skills integrated with Islamic education to prepare students for the future.</p>
         <a href="courses.html#computer" class="btn btn-primary" style="margin-top:14px;font-size:0.85rem;padding:8px 18px;">Learn More</a>
@@ -629,7 +630,7 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:36px;">
-      <a href="courses.html" class="btn btn-primary">View All Programs</a>
+      <a href="courses.html" class="btn btn-primary" data-i18n="courses-btn">View All Programs</a>
     </div>
   </div>
 </section>
@@ -640,14 +641,14 @@
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <span class="urdu-title">ہمیں کیوں چنیں؟</span>
-      <h2>Why Choose Our Jamia?</h2>
+      <span class="urdu-title" data-i18n="why-section-title">ہمیں کیوں چنیں؟</span>
+      <h2 data-i18n="why-h2">Why Choose Our Jamia?</h2>
       <div class="divider"></div>
     </div>
     <div class="why-grid">
       <div class="why-card">
         <div class="why-icon">🕌</div>
-        <h3>Authentic Deeni Education</h3>
+        <h3 data-i18n="why1-h3">Authentic Deeni Education</h3>
         <span class="urdu-label">معیاری دینی تعلیم</span>
         <p>Curriculum rooted in the Quran, Sunnah, and classical Islamic scholarship.</p>
       </div>
@@ -659,13 +660,13 @@
       </div>
       <div class="why-card">
         <div class="why-icon">👩‍🏫</div>
-        <h3>Qualified Teachers</h3>
+        <h3 data-i18n="why3-h3">Qualified Teachers</h3>
         <span class="urdu-label">تجربہ کار اساتذہ</span>
         <p>Experienced, dedicated faculty committed to students' growth and success.</p>
       </div>
       <div class="why-card">
         <div class="why-icon">🌟</div>
-        <h3>Modern Skills</h3>
+        <h3 data-i18n="why4-h3">Modern Skills</h3>
         <span class="urdu-label">جدید مہارتیں</span>
         <p>Computer education and vocational training to prepare students for modern life.</p>
       </div>
@@ -687,29 +688,29 @@
       <div class="news-list">
         <div class="news-card">
           <span class="badge badge-notice">Notice</span>
-          <h3>Admissions Open for Academic Year 2026–27</h3>
+          <h3 data-i18n="news1-h3">Admissions Open for Academic Year 2026–27</h3>
           <p class="urdu" style="font-size:0.95rem;margin:6px 0;">داخلہ فارم دستیاب ہیں — تمام کورسز کے لیے</p>
           <p class="meta">📅 October 2026 &nbsp;·&nbsp; <a href="admissions.html">Apply Now →</a></p>
         </div>
         <div class="news-card">
           <span class="badge badge-event">Event</span>
-          <h3>Annual Results Announcement — All Courses</h3>
+          <h3 data-i18n="news2-h3">Annual Results Announcement — All Courses</h3>
           <p class="urdu" style="font-size:0.95rem;margin:6px 0;">سالانہ امتحانات کے نتائج جاری کیے جائیں گے</p>
           <p class="meta">📅 September 2026 &nbsp;·&nbsp; <a href="news.html">Read More →</a></p>
         </div>
         <div class="news-card">
           <span class="badge badge-result">Holiday</span>
-          <h3>Winter Break Schedule — December 2026</h3>
+          <h3 data-i18n="news3-h3">Winter Break Schedule — December 2026</h3>
           <p class="urdu" style="font-size:0.95rem;margin:6px 0;">موسم سرما کی چھٹیوں کا شیڈول جاری کیا گیا</p>
           <p class="meta">📅 August 2026 &nbsp;·&nbsp; <a href="news.html">Read More →</a></p>
         </div>
         <div style="margin-top:10px;">
-          <a href="news.html" class="btn btn-primary">View All Announcements</a>
+          <a href="news.html" class="btn btn-primary" data-i18n="news-all-btn">View All Announcements</a>
         </div>
       </div>
       <div>
         <div class="sidebar-box">
-          <h3>Quick Links</h3>
+          <h3 data-i18n="ql-title">Quick Links</h3>
           <a href="admissions.html" class="quick-link">
             <span class="ql-icon">📝</span> Admission Form
           </a>
@@ -741,8 +742,8 @@
   <div class="container">
     <div class="donation-inner">
       <div class="donation-text">
-        <span class="urdu-heading">دینی تعلیم میں تعاون کریں</span>
-        <h2>Support Islamic Education</h2>
+        <span class="urdu-heading" data-i18n="donate-section-title">دینی تعلیم میں تعاون کریں</span>
+        <h2 data-i18n="donate-h2">Support Islamic Education</h2>
         <p>Your generous donation helps us provide quality Islamic education to students who cannot afford it. Every contribution — big or small — is an ongoing charity (Sadaqah Jariyah).</p>
         <p class="hadith">«مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ»</p>
         <p><em>"Whoever guides someone to goodness will have a reward like the one who does it." — (Sahih Muslim)</em></p>
@@ -752,7 +753,7 @@
         </div>
       </div>
       <div class="donation-options">
-        <h3>Scan to Donate via UPI</h3>
+        <h3 data-i18n="donate-qr-title">Scan to Donate via UPI</h3>
         <div class="qr-box">
           <!-- Replace this placeholder with actual QR code image:
                <img src="images/upi-qr.png" alt="UPI QR Code"> -->
@@ -764,7 +765,7 @@
           <span class="upi-id-display">jamia@upi</span>
           <!-- Replace with actual UPI ID -->
         </div>
-        <a href="donations.html" class="btn btn-gold" style="width:100%;text-align:center;">View All Payment Methods</a>
+        <a href="donations.html" class="btn btn-gold" style="width:100%;text-align:center;" data-i18n="donate-all-btn">View All Payment Methods</a>
       </div>
     </div>
   </div>
@@ -776,10 +777,10 @@
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <span class="urdu-title">تصویری گیلری</span>
-      <h2>Photo Gallery</h2>
+      <span class="urdu-title" data-i18n="gallery-section-title">تصویری گیلری</span>
+      <h2 data-i18n="gallery-h2">Photo Gallery</h2>
       <div class="divider"></div>
-      <p>Glimpses of campus life, activities, and events at the Jamia</p>
+      <p data-i18n="gallery-sub">Glimpses of campus life, activities, and events at the Jamia</p>
     </div>
     <div class="gallery-preview">
       <!-- Replace spans with <img> tags once you have photos -->
@@ -793,7 +794,7 @@
       <div class="gp-item">🌟</div>
     </div>
     <div style="text-align:center;margin-top:30px;">
-      <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
+      <a href="gallery.html" class="btn btn-primary" data-i18n="gallery-btn">View Full Gallery</a>
     </div>
   </div>
 </section>
@@ -804,14 +805,14 @@
 <section class="section section-alt">
   <div class="container">
     <div class="section-header">
-      <span class="urdu-title">رابطہ کریں</span>
-      <h2>Get in Touch</h2>
+      <span class="urdu-title" data-i18n="contact-section-title">رابطہ کریں</span>
+      <h2 data-i18n="contact-h2">Get in Touch</h2>
       <div class="divider"></div>
     </div>
     <div class="contact-grid">
       <div class="contact-card">
         <span class="contact-icon">📍</span>
-        <h3>Our Address</h3>
+        <h3 data-i18n="contact1-h3">Our Address</h3>
         <p>Jamia Ayesha Siddiqua Lil Banin Wal Banat</p>
         <p>Patancheru, Hyderabad</p>
         <p>Telangana, India</p>
@@ -827,7 +828,7 @@
       </div>
       <div class="contact-card">
         <span class="contact-icon">✉️</span>
-        <h3>Email</h3>
+        <h3 data-i18n="contact3-h3">Email</h3>
         <a href="mailto:info@jamiaayesha.org">info@jamiaayesha.org</a>
         <!-- Replace with actual email -->
         <a href="contact.html" class="btn btn-primary" style="margin-top:16px;font-size:0.85rem;padding:8px 18px;">Send Message</a>
@@ -855,19 +856,19 @@
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Jamia</a></li>
-          <li><a href="departments.html">Departments</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav-about">About Jamia</a></li>
+          <li><a href="departments.html" data-i18n="nav-departments">Departments</a></li>
+          <li><a href="courses.html" data-i18n="nav-courses">Courses</a></li>
+          <li><a href="admissions.html" data-i18n="nav-admissions">Admissions</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Information</h4>
         <ul>
           <li><a href="news.html">News & Notices</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="donations.html">Donate</a></li>
+          <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+          <li><a href="donations.html" data-i18n="nav-donate">Donate</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
         </ul>
@@ -896,7 +897,7 @@
       <p>© 2026 Jamia Ayesha Siddiqua Lil Banin Wal Banat. All rights reserved.</p>
       <div class="footer-bottom-links">
         <a href="privacy.html">Privacy Policy</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" data-i18n="nav-contact">Contact</a>
       </div>
     </div>
   </div>
@@ -910,6 +911,7 @@
   </svg>
 </a>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

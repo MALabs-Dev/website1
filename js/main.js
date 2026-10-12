@@ -75,28 +75,10 @@ function switchTab(lang) {
   });
 }
 
-/* ---------- Language Switcher (EN / Urdu toggle) ---------- */
-function setLang(lang) {
-  // Update button states
-  document.querySelectorAll('.lang-btn').forEach(function (btn) {
-    btn.classList.remove('active');
-  });
-  const clicked = Array.from(document.querySelectorAll('.lang-btn')).find(function (btn) {
-    return btn.getAttribute('onclick') === "setLang('" + lang + "')";
-  });
-  if (clicked) clicked.classList.add('active');
-
-  // Toggle RTL on body for Urdu
-  if (lang === 'ur') {
-    document.body.style.fontFamily = "'Noto Nastaliq Urdu', 'Amiri', serif";
-    document.documentElement.setAttribute('dir', 'rtl');
-    document.documentElement.setAttribute('lang', 'ur');
-  } else {
-    document.body.style.fontFamily = '';
-    document.documentElement.setAttribute('dir', 'ltr');
-    document.documentElement.setAttribute('lang', 'en');
-  }
-}
+/* ---------- Language Switcher ----------
+   Real implementation lives in js/i18n.js — setLang() is defined there.
+   This comment is kept so the call-site in HTML still resolves correctly.
+------------------------------------------------------- */
 
 /* ---------- News Filter (news.html) ---------- */
 function filterNews(category, btn) {

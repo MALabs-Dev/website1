@@ -37,12 +37,27 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 
 body {
-  font-family: var(--font-en);
+  font-family: var(--page-font, var(--font-en));
   color: var(--text-dark);
   background: var(--white);
   line-height: 1.7;
   overflow-x: hidden;
 }
+
+/* RTL layout adjustments */
+[dir="rtl"] .stat-item + .stat-item { border-left: none; border-right: 1px solid var(--border); }
+[dir="rtl"] .news-card-full:hover   { transform: translateX(-4px); }
+[dir="rtl"] .about-text .urdu-quote { border-right: none; border-left: 4px solid var(--gold); padding-right: 0; padding-left: 16px; }
+[dir="rtl"] .footer-grid            { direction: rtl; }
+[dir="rtl"] .nav-list               { flex-direction: row-reverse; }
+[dir="rtl"] .footer-bottom          { flex-direction: row-reverse; }
+[dir="rtl"] .section-header         { direction: rtl; }
+[dir="rtl"] .hero-content           { text-align: right; }
+[dir="rtl"] .hero-actions           { flex-direction: row-reverse; }
+[dir="rtl"] .breadcrumb             { flex-direction: row-reverse; }
+[dir="rtl"] .form-group label       { text-align: right; }
+[dir="rtl"] .cd-item                { flex-direction: row-reverse; }
+[dir="rtl"] .footer-contact-item    { flex-direction: row-reverse; }
 
 img { max-width: 100%; height: auto; display: block; }
 a  { color: var(--green); text-decoration: none; transition: color var(--transition); }
