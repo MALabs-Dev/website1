@@ -210,22 +210,22 @@
       <div class="step-card">
         <div class="step-num">1</div>
         <h4 data-i18n="adm-step1-h4">Fill Enquiry Form</h4>
-        <p>Complete the online enquiry form below with student details</p>
+        <p data-i18n="adm-step1-p">Complete the online enquiry form below with student details</p>
       </div>
       <div class="step-card">
         <div class="step-num">2</div>
         <h4 data-i18n="adm-step2-h4">We Contact You</h4>
-        <p>Our team will contact you within 2–3 working days</p>
+        <p data-i18n="adm-step2-p">Our team will contact you within 2–3 working days</p>
       </div>
       <div class="step-card">
         <div class="step-num">3</div>
         <h4 data-i18n="adm-step3-h4">Visit the Jamia</h4>
-        <p>Come for an interview and document verification</p>
+        <p data-i18n="adm-step3-p">Come for an interview and document verification</p>
       </div>
       <div class="step-card">
         <div class="step-num">4</div>
         <h4 data-i18n="adm-step4-h4">Confirm Admission</h4>
-        <p>Complete registration and join the Jamia</p>
+        <p data-i18n="adm-step4-p">Complete registration and join the Jamia</p>
       </div>
     </div>
   </div>
@@ -270,24 +270,24 @@
       <div class="sidebar-sticky">
         <div class="info-box">
           <h3 data-i18n="adm-status-title">📅 Admission Status</h3>
-          <div class="info-row"><span class="label">Current Status</span><span class="value open">🟢 Open</span></div>
+          <div class="info-row"><span class="label" data-i18n="adm-info-status">Current Status</span><span class="value open" data-i18n="adm-status-open">🟢 Open</span></div>
           <!-- Change "Open"/"Closed" as needed -->
-          <div class="info-row"><span class="label">Academic Year</span><span class="value">2026–27</span></div>
-          <div class="info-row"><span class="label">Last Date</span><span class="value">31 Dec 2026</span></div>
-          <div class="info-row"><span class="label">Classes Begin</span><span class="value">Jan 2027</span></div>
+          <div class="info-row"><span class="label" data-i18n="adm-info-year">Academic Year</span><span class="value">2026–27</span></div>
+          <div class="info-row"><span class="label" data-i18n="adm-info-lastdate">Last Date</span><span class="value">31 Dec 2026</span></div>
+          <div class="info-row"><span class="label" data-i18n="adm-info-start">Classes Begin</span><span class="value">Jan 2027</span></div>
         </div>
         <div class="info-box">
-          <h3>📚 Programs Accepting</h3>
-          <div class="info-row"><span class="label">Hifz-ul-Quran</span><span class="value open">✅ Open</span></div>
-          <div class="info-row"><span class="label">Alimah & Fazilah</span><span class="value open">✅ Open</span></div>
-          <div class="info-row"><span class="label">Momina Course</span><span class="value open">✅ Open</span></div>
-          <div class="info-row"><span class="label">Deeniyat Diploma</span><span class="value open">✅ Open</span></div>
-          <div class="info-row"><span class="label">Computer Course</span><span class="value open">✅ Open</span></div>
-          <div class="info-row"><span class="label">Tailoring Course</span><span class="value open">✅ Open</span></div>
+          <h3 data-i18n="adm-accepting">📚 Programs Accepting</h3>
+          <div class="info-row"><span class="label">Hifz-ul-Quran</span><span class="value open" data-i18n="adm-open">✅ Open</span></div>
+          <div class="info-row"><span class="label">Alimah & Fazilah</span><span class="value open" data-i18n="adm-open">✅ Open</span></div>
+          <div class="info-row"><span class="label">Momina Course</span><span class="value open" data-i18n="adm-open">✅ Open</span></div>
+          <div class="info-row"><span class="label">Deeniyat Diploma</span><span class="value open" data-i18n="adm-open">✅ Open</span></div>
+          <div class="info-row"><span class="label">Computer Course</span><span class="value open" data-i18n="adm-open">✅ Open</span></div>
+          <div class="info-row"><span class="label">Tailoring Course</span><span class="value open" data-i18n="adm-open">✅ Open</span></div>
         </div>
         <div class="info-box">
           <h3 data-i18n="adm-helpline-title">📞 Admission Helpline</h3>
-          <p style="font-size:0.88rem;color:var(--text-mid);margin-bottom:12px;">Have questions? Contact us directly:</p>
+          <p style="font-size:0.88rem;color:var(--text-mid);margin-bottom:12px;" data-i18n="adm-help-p">Have questions? Contact us directly:</p>
           <a href="tel:+910000000000" class="btn btn-primary" style="width:100%;text-align:center;margin-bottom:10px;" data-i18n="adm-call-btn">📞 Call Us</a>
           <a href="https://wa.me/910000000000" class="btn btn-gold" style="width:100%;text-align:center;" target="_blank" rel="noopener">💬 WhatsApp</a>
         </div>
@@ -305,68 +305,68 @@
       <form id="admissionForm" onsubmit="handleFormSubmit(event)">
         <div class="form-grid">
           <div class="form-group">
-            <label for="studentName">Student's Full Name *</label>
-            <input type="text" id="studentName" name="studentName" required placeholder="Enter full name" />
+            <label for="studentName" data-i18n="adm-label-name">Student's Full Name *</label>
+            <input type="text" id="studentName" name="studentName" required placeholder="Enter full name" data-i18n-ph="adm-ph-name" />
           </div>
           <div class="form-group">
-            <label for="dob">Date of Birth *</label>
+            <label for="dob" data-i18n="adm-label-dob">Date of Birth *</label>
             <input type="date" id="dob" name="dob" required />
           </div>
           <div class="form-group">
-            <label for="gender">Gender *</label>
+            <label for="gender" data-i18n="adm-label-gender">Gender *</label>
             <select id="gender" name="gender" required>
-              <option value="">Select gender</option>
-              <option value="male">Male (Shoba-e-Banin)</option>
-              <option value="female">Female (Shoba-e-Banat)</option>
+              <option value="" data-i18n="adm-opt-sel-gen">Select gender</option>
+              <option value="male" data-i18n="adm-opt-male">Male (Shoba-e-Banin)</option>
+              <option value="female" data-i18n="adm-opt-female">Female (Shoba-e-Banat)</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="course">Course Applying For *</label>
+            <label for="course" data-i18n="adm-label-course">Course Applying For *</label>
             <select id="course" name="course" required>
-              <option value="">Select course</option>
-              <option value="hifz">Hifz-ul-Quran</option>
-              <option value="alimah">Alimah Course</option>
-              <option value="fazilah">Fazilah Course</option>
-              <option value="momina">Momina Course</option>
-              <option value="diploma">One-Year Deeniyat Diploma</option>
-              <option value="computer">Computer Education</option>
-              <option value="tailoring">Tailoring & Skill Development</option>
+              <option value="" data-i18n="adm-opt-sel-course">Select course</option>
+              <option value="hifz" data-i18n="adm-opt-hifz">Hifz-ul-Quran</option>
+              <option value="alimah" data-i18n="adm-opt-alimah">Alimah Course</option>
+              <option value="fazilah" data-i18n="adm-opt-fazilah">Fazilah Course</option>
+              <option value="momina" data-i18n="adm-opt-momina">Momina Course</option>
+              <option value="diploma" data-i18n="adm-opt-diploma">One-Year Deeniyat Diploma</option>
+              <option value="computer" data-i18n="adm-opt-comp">Computer Education</option>
+              <option value="tailoring" data-i18n="adm-opt-tailor">Tailoring & Skill Development</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="parentName">Parent / Guardian Name *</label>
-            <input type="text" id="parentName" name="parentName" required placeholder="Father's or guardian's name" />
+            <label for="parentName" data-i18n="adm-label-parent">Parent / Guardian Name *</label>
+            <input type="text" id="parentName" name="parentName" required placeholder="Father's or guardian's name" data-i18n-ph="adm-ph-parent" />
           </div>
           <div class="form-group">
-            <label for="phone">Phone / WhatsApp Number *</label>
+            <label for="phone" data-i18n="adm-label-phone">Phone / WhatsApp Number *</label>
             <input type="tel" id="phone" name="phone" required placeholder="+91 00000 00000" />
           </div>
           <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Optional" />
+            <label for="email" data-i18n="adm-label-email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Optional" data-i18n-ph="adm-ph-optional" />
           </div>
           <div class="form-group">
-            <label for="address">City / Area *</label>
-            <input type="text" id="address" name="address" required placeholder="Your city or area" />
+            <label for="address" data-i18n="adm-label-city">City / Area *</label>
+            <input type="text" id="address" name="address" required placeholder="Your city or area" data-i18n-ph="adm-ph-city" />
           </div>
         </div>
         <div class="form-group">
-          <label for="quranLevel">Current Quran Reading Level</label>
+          <label for="quranLevel" data-i18n="adm-label-quran">Current Quran Reading Level</label>
           <select id="quranLevel" name="quranLevel">
-            <option value="">Select level</option>
-            <option value="none">Cannot read yet (Qaida level)</option>
-            <option value="nazira">Can read Quran (Nazira)</option>
-            <option value="hifz-partial">Partially memorised</option>
-            <option value="hafiz">Already a Hafiz</option>
+            <option value="" data-i18n="adm-opt-sel-lvl">Select level</option>
+            <option value="none" data-i18n="adm-opt-none">Cannot read yet (Qaida level)</option>
+            <option value="nazira" data-i18n="adm-opt-nazira">Can read Quran (Nazira)</option>
+            <option value="hifz-partial" data-i18n="adm-opt-partial">Partially memorised</option>
+            <option value="hafiz" data-i18n="adm-opt-hafiz">Already a Hafiz</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="message">Any Questions or Additional Information</label>
+          <label for="message" data-i18n="adm-label-msg">Any Questions or Additional Information</label>
           <textarea id="message" name="message" rows="4" placeholder="Any questions, special requirements, or information you'd like to share..."></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="padding:13px 36px;font-size:1rem;" data-i18n="adm-submit-btn">Submit Enquiry →</button>
       </form>
-      <div class="form-success" id="formSuccess">
+      <div class="form-success" id="formSuccess" data-i18n="adm-success-msg">
         ✅ <strong>JazakAllahu Khayran!</strong> Your enquiry has been received. Our admissions team will contact you within 2–3 working days. May Allah bless your endeavour.
       </div>
     </div>
