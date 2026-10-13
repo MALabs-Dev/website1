@@ -575,6 +575,12 @@ const TRANSLATIONS = {
   /* ---- news bottom info bar ---- */
   "news-bottom-info": { en: "For more information on any notice, contact the Jamia office directly.", ur: "کسی بھی اعلان کی مزید معلومات کے لیے جامعہ کے دفتر سے براہ راست رابطہ کریں۔", ar: "للمزيد من المعلومات حول أي إشعار، تواصل مباشرة مع مكتب الجامعة." },
   "news-bottom-contact": { en: "Contact Us →", ur: "رابطہ کریں →", ar: "اتصل بنا →" }
+,
+
+  /* ---- PATCH: missing keys ---- */
+  "nav-banin-short":   { en: "Shoba-e-Banin", ur: "شعبۂ بنین", ar: "شعبة البنين" },
+  "nav-banat-short":   { en: "Shoba-e-Banat", ur: "شعبۂ بنات", ar: "شعبة البنات" },
+  "adm-rule-title-h2": { en: "Admission Rules & Requirements", ur: "داخلہ قوانین و شرائط", ar: "قواعد القبول ومتطلباته" }
 
 };
 
