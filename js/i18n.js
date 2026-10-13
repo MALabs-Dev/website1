@@ -482,6 +482,99 @@ const TRANSLATIONS = {
   "con-opt-other":    { en: "Other",              ur: "دیگر",               ar: "أخرى" },
   "con-wa-p":         { en: "Prefer to chat? Message us on WhatsApp:", ur: "چیٹ کرنا چاہتے ہیں؟ واٹس ایپ پر پیغام بھیجیں:", ar: "تفضل المحادثة؟ راسلنا على واتساب:" },
   "con-success-msg":  { en: "✅ JazakAllahu Khayran! Your message has been received. We will get back to you within 1–2 working days, inshaAllah.", ur: "✅ جزاکم اللہ خیراً! آپ کا پیغام موصول ہو گیا۔ ہم ان شاء اللہ ۱–۲ دنوں میں رابطہ کریں گے۔", ar: "✅ جزاكم الله خيراً! تم استلام رسالتك. سنرد عليك خلال ١–٢ يومي عمل إن شاء الله." }
+,
+
+  /* ---- SHARED NAV / FOOTER / BREADCRUMB ---- */
+  "nav-mission-vision": { en: "Mission & Vision",       ur: "مشن اور وژن",          ar: "الرسالة والرؤية" },
+  "nav-news-notices":   { en: "News & Notices",         ur: "خبریں و اعلانات",       ar: "الأخبار والإعلانات" },
+  "footer-link-about":  { en: "About",                  ur: "جامعہ",                 ar: "عن الجامعة" },
+  "footer-link-news":   { en: "News",                   ur: "خبریں",                 ar: "الأخبار" },
+  "footer-link-privacy":{ en: "Privacy Policy",         ur: "رازداری پالیسی",        ar: "سياسة الخصوصية" },
+  "footer-link-contact":{ en: "Contact Us",             ur: "رابطہ کریں",            ar: "اتصل بنا" },
+  "footer-addr-full":   { en: "Patancheru, Hyderabad, Telangana.", ur: "پٹانچیرو، حیدرآباد، تلنگانہ۔", ar: "باتانشيرو، حيدر آباد، تلنغانا." },
+  "footer-addr-span":   { en: "Patancheru, Hyderabad, Telangana", ur: "پٹانچیرو، حیدرآباد، تلنگانہ", ar: "باتانشيرو، حيدر آباد، تلنغانا" },
+  "bc-about":           { en: "About",                  ur: "جامعہ کے بارے میں",     ar: "عن الجامعة" },
+  "bc-admissions":      { en: "Admissions",             ur: "داخلہ",                 ar: "القبول" },
+  "bc-contact":         { en: "Contact",                ur: "رابطہ",                 ar: "اتصل بنا" },
+  "bc-courses":         { en: "Courses",                ur: "کورسز",                 ar: "الدورات" },
+  "bc-departments":     { en: "Departments",            ur: "شعبہ جات",              ar: "الأقسام" },
+  "bc-donate":          { en: "Donate",                 ur: "عطیہ",                  ar: "التبرع" },
+  "bc-gallery":         { en: "Gallery",                ur: "گیلری",                 ar: "المعرض" },
+  "bc-news":            { en: "News & Notices",         ur: "خبریں و اعلانات",       ar: "الأخبار والإعلانات" },
+
+  /* ---- INDEX — missing course cards, why cards, news section ---- */
+  "idx-course1-p": { en: "Complete memorization of the Holy Quran under expert Huffaz with Tajweed and proper recitation rules.", ur: "ماہر حفاظ کی نگرانی میں تجوید اور صحیح تلاوت کے ساتھ قرآن کریم کا مکمل حفظ۔", ar: "حفظ القرآن الكريم كاملاً تحت إشراف حفاظ متخصصين مع أحكام التجويد والتلاوة الصحيحة." },
+  "idx-course2-p": { en: "Advanced Islamic scholarship programs covering Tafsir, Hadith, Fiqh, and all classical Islamic sciences.", ur: "تفسیر، حدیث، فقہ اور تمام کلاسیکی اسلامی علوم کا احاطہ کرنے والے اعلیٰ علمی پروگرام۔", ar: "برامج دراسية إسلامية متقدمة تشمل التفسير والحديث والفقه وسائر العلوم الإسلامية الكلاسيكية." },
+  "idx-course3-p": { en: "A foundational course in Islamic beliefs, practice, and character building for young Muslim women.", ur: "مسلمان خواتین کے لیے اسلامی عقائد، عمل اور کردار سازی کا بنیادی کورس۔", ar: "دورة أساسية في العقيدة الإسلامية والعبادة وبناء الشخصية للمرأة المسلمة." },
+  "idx-course4-p": { en: "An intensive one-year program covering the essential pillars of Islamic knowledge and practice.", ur: "اسلامی علم اور عمل کے بنیادی ارکان پر محیط ایک سالہ گہرا پروگرام۔", ar: "برنامج مكثف لمدة عام واحد يشمل أركان المعرفة والممارسة الإسلامية الأساسية." },
+  "idx-course5-p": { en: "Modern computer literacy and digital skills integrated with Islamic education to prepare students for the future.", ur: "اسلامی تعلیم کے ساتھ جدید کمپیوٹر خواندگی اور ڈیجیٹل مہارتیں — طلباء کو مستقبل کے لیے تیار کرنے کے لیے۔", ar: "محو الأمية الحاسوبية والمهارات الرقمية الحديثة مدمجةً بالتعليم الإسلامي لإعداد الطلاب للمستقبل." },
+  "idx-course6-p": { en: "Practical vocational training in tailoring and handicrafts to empower students with livelihood skills.", ur: "طلباء کو روزگار کی مہارتوں سے بہرہ مند کرنے کے لیے سلائی اور دستکاری میں عملی پیشہ ورانہ تربیت۔", ar: "تدريب مهني عملي في الخياطة والحرف اليدوية لتمكين الطلاب من مهارات كسب الرزق." },
+  "idx-learn-more": { en: "Learn More", ur: "مزید جانیں", ar: "اعرف أكثر" },
+  "idx-why1-p": { en: "Curriculum rooted in the Quran, Sunnah, and classical Islamic scholarship.", ur: "قرآن، سنت اور کلاسیکی اسلامی علوم پر مبنی نصاب۔", ar: "منهج مستند إلى القرآن والسنة والتراث الإسلامي الكلاسيكي." },
+  "idx-why2-p": { en: "Holistic moral and spiritual development alongside academic excellence.", ur: "تعلیمی عمدگی کے ساتھ ساتھ جامع اخلاقی اور روحانی ترقی۔", ar: "تنمية أخلاقية وروحية شاملة جنباً إلى جنب مع التفوق الأكاديمي." },
+  "idx-why3-p": { en: "Experienced, dedicated faculty committed to students' growth and success.", ur: "طلباء کی نشوونما اور کامیابی کے لیے وقف تجربہ کار اساتذہ۔", ar: "كادر تعليمي ذو خبرة ومتفانٍ لنمو الطلاب ونجاحهم." },
+  "idx-why4-p": { en: "Computer education and vocational training to prepare students for modern life.", ur: "جدید زندگی کے لیے طلباء کو تیار کرنے کے لیے کمپیوٹر تعلیم اور پیشہ ورانہ تربیت۔", ar: "تعليم الحاسوب والتدريب المهني لإعداد الطلاب لمتطلبات الحياة العصرية." },
+  "idx-news-apply":  { en: "Apply Now →",  ur: "ابھی درخواست دیں →", ar: "قدِّم الآن →" },
+  "idx-news-more":   { en: "Read More →",  ur: "مزید پڑھیں →",       ar: "اقرأ المزيد →" },
+  "idx-notice-badge":{ en: "Notice",       ur: "اعلان",               ar: "إشعار" },
+  "idx-event-badge": { en: "Event",        ur: "تقریب",               ar: "فعالية" },
+  "idx-holiday-badge":{ en: "Holiday",     ur: "چھٹی",                ar: "إجازة" },
+  "idx-donate-now":  { en: "Donate Now",   ur: "ابھی عطیہ دیں",       ar: "تبرَّع الآن" },
+  "idx-monthly-donor":{ en: "Monthly Donor", ur: "ماہانہ عطیہ دہندہ", ar: "متبرع شهري" },
+  "idx-upi-or":      { en: "Or pay directly via UPI ID:", ur: "یا براہ راست یو پی آئی آئی ڈی سے:", ar: "أو ادفع مباشرة عبر معرّف UPI:" },
+  "idx-contact-phone-h3": { en: "Phone & WhatsApp", ur: "فون اور واٹس ایپ", ar: "الهاتف وواتساب" },
+  "idx-send-msg": { en: "Send Message", ur: "پیغام بھیجیں", ar: "إرسال الرسالة" },
+  "idx-whatsapp": { en: "WhatsApp Us", ur: "واٹس ایپ کریں", ar: "واتساب" },
+  "idx-founder":  { en: "Founder & Nazim: Maulana Muhammad Saleem Rahmani", ur: "بانی و ناظم: مولانا محمد سلیم رحمانی", ar: "المؤسس والناظم: مولانا محمد سليم رحماني" },
+  "idx-addr-hyd": { en: "Patancheru, Hyderabad", ur: "پٹانچیرو، حیدرآباد", ar: "باتانشيرو، حيدر آباد" },
+  "idx-addr-tel": { en: "Telangana, India",      ur: "تلنگانہ، بھارت",     ar: "تلنغانا، الهند" },
+
+  /* ---- ADMISSIONS — rule labels + sidebar status ---- */
+  "adm-rule-age":      { en: "Age Requirement:",       ur: "عمر کی شرط:",          ar: "متطلب السن:" },
+  "adm-rule-quran":    { en: "Basic Quran Knowledge:", ur: "بنیادی قرآن علم:",      ar: "المعرفة القرآنية الأساسية:" },
+  "adm-rule-docs":     { en: "Documents Required:",    ur: "مطلوبہ دستاویزات:",     ar: "المستندات المطلوبة:" },
+  "adm-rule-interview":{ en: "Interview:",             ur: "انٹرویو:",              ar: "المقابلة:" },
+  "adm-rule-guardian": { en: "Guardian Commitment:",   ur: "سرپرست کا عہد:",        ar: "التزام ولي الأمر:" },
+  "adm-rule-dress":    { en: "Dress Code:",            ur: "لباس کا ضابطہ:",        ar: "قواعد اللباس:" },
+  "adm-rule-fee":      { en: "Fee Structure:",         ur: "فیس کا ڈھانچہ:",        ar: "هيكل الرسوم:" },
+  "adm-rule-conduct":  { en: "Conduct & Discipline:",  ur: "طرز عمل اور نظم و ضبط:", ar: "السلوك والانضباط:" },
+  "adm-dl-sub":        { en: "Print and fill the form before your visit to the Jamia", ur: "جامعہ آنے سے پہلے فارم پرنٹ کریں اور پُر کریں", ar: "اطبع الاستمارة وأكملها قبل زيارة الجامعة" },
+  "adm-dl-btn":        { en: "Download ↓",             ur: "ڈاؤن لوڈ ↓",           ar: "تحميل ↓" },
+  "adm-form-intro-p":  { en: "Fill in the details below and our admissions team will contact you within 2–3 working days. Fields marked * are required.", ur: "ذیل میں تفصیلات بھریں اور ہماری ٹیم ۲–۳ دنوں میں رابطہ کرے گی۔ * والے خانے ضروری ہیں۔", ar: "أكمل البيانات أدناه وسيتواصل معك فريق القبول خلال ٢–٣ أيام عمل. الحقول المطلوبة علامتها *." },
+  "adm-sidebar-hifz":     { en: "Hifz-ul-Quran",          ur: "حفظ القرآن",        ar: "حفظ القرآن" },
+  "adm-sidebar-alimah":   { en: "Alimah & Fazilah",        ur: "عالمہ و فاضلہ",     ar: "العالمة والفاضلة" },
+  "adm-sidebar-momina":   { en: "Momina Course",           ur: "مومنہ کورس",        ar: "دورة المؤمنة" },
+  "adm-sidebar-diploma":  { en: "Deeniyat Diploma",        ur: "دینیات ڈپلومہ",     ar: "دبلوم الدينيات" },
+  "adm-sidebar-computer": { en: "Computer Course",         ur: "کمپیوٹر کورس",      ar: "دورة الحاسوب" },
+  "adm-sidebar-tailoring":{ en: "Tailoring Course",        ur: "سلائی کورس",        ar: "دورة الخياطة" },
+
+  /* ---- DEPARTMENTS — bullet lists ---- */
+  "dept-li-banin1": { en: "Structured daily schedule including Fajr Salah and Quran recitation",              ur: "فجر نماز اور قرآن تلاوت سمیت منظم یومیہ شیڈول",                ar: "جدول يومي منظم يشمل صلاة الفجر وتلاوة القرآن" },
+  "dept-li-banin2": { en: "Regular Tajweed and Hifz sessions with qualified Huffaz",                           ur: "اہل حفاظ کے ساتھ باقاعدہ تجوید اور حفظ سیشنز",                 ar: "جلسات تجويد وحفظ منتظمة مع حفاظ مؤهلين" },
+  "dept-li-banin3": { en: "Arabic and Urdu language development integrated throughout the curriculum",         ur: "عربی اور اردو زبان کی ترقی پورے نصاب میں شامل",                ar: "تطوير اللغة العربية والأردية مدمج في المنهج" },
+  "dept-li-banin4": { en: "Regular assessments, examinations, and progress reporting",                         ur: "باقاعدہ جائزے، امتحانات اور ترقی کی رپورٹنگ",                  ar: "تقييمات وامتحانات منتظمة وتقارير التقدم" },
+  "dept-li-banin5": { en: "Extracurricular Islamic activities: debates, qira'at competitions, and more",       ur: "ہم نصابی اسلامی سرگرمیاں: مناظرے، قرات مقابلے وغیرہ",          ar: "أنشطة إسلامية لامنهجية: مناظرات ومسابقات قراءة وغيرها" },
+  "dept-li-banin6": { en: "Computer education and vocational skills alongside Deeni studies",                  ur: "دینی تعلیم کے ساتھ کمپیوٹر تعلیم اور پیشہ ورانہ مہارتیں",     ar: "تعليم الحاسوب والمهارات المهنية جنباً إلى جنب مع الدراسة الدينية" },
+  "dept-li-banat1": { en: "Fully female faculty and administration — a completely secure environment",         ur: "مکمل خاتون اساتذہ اور انتظامیہ — مکمل محفوظ ماحول",           ar: "كادر إداري وتعليمي نسائي بالكامل — بيئة آمنة تماماً" },
+  "dept-li-banat2": { en: "Comprehensive Hifz program with expert female Huffaz",                              ur: "ماہر خاتون حفاظ کے ساتھ جامع حفظ پروگرام",                     ar: "برنامج حفظ شامل مع حافظات متخصصات" },
+  "dept-li-banat3": { en: "Alimah and Fazilah courses following classical Islamic methodology",                ur: "کلاسیکی اسلامی طریقہ کار کے مطابق عالمہ اور فاضلہ کورسز",    ar: "دورتا العالمة والفاضلة وفق المنهج الإسلامي الكلاسيكي" },
+  "dept-li-banat4": { en: "Momina Course for foundational Islamic knowledge and practice",                     ur: "بنیادی اسلامی علم اور عمل کے لیے مومنہ کورس",                 ar: "دورة المؤمنة للمعرفة والممارسة الإسلامية الأساسية" },
+  "dept-li-banat5": { en: "Tailoring, embroidery, and skill development for economic empowerment",             ur: "اقتصادی بااختیاریت کے لیے سلائی، کڑھائی اور ہنر سازی",        ar: "الخياطة والتطريز وتنمية المهارات للتمكين الاقتصادي" },
+  "dept-li-banat6": { en: "Regular parent-teacher communication and progress updates",                         ur: "باقاعدہ والدین-اساتذہ رابطہ اور ترقی کی اطلاعات",              ar: "تواصل منتظم بين أولياء الأمور والمعلمين وتحديثات التقدم" },
+  "dept-female-faculty": { en: "Female Faculty", ur: "خاتون اساتذہ", ar: "هيئة التدريس النسائية" },
+
+  /* ---- DONATIONS — monthly section ---- */
+  "don-monthly-prog-h2": { en: "Monthly Donor Program",    ur: "ماہانہ عطیہ دہندہ پروگرام", ar: "برنامج المتبرعين الشهريين" },
+  "don-monthly-prog-sub": { en: "A small monthly commitment makes a huge difference to a student's future", ur: "ایک چھوٹا سا ماہانہ عہد ایک طالب علم کے مستقبل میں بڑا فرق لاتا ہے", ar: "التزام شهري صغير يُحدث فارقاً كبيراً في مستقبل الطالب" },
+  "don-per-month":       { en: "/ month",                  ur: "/ ماہ",                     ar: "/ شهر" },
+  "don-instant":         { en: "Instant transfer — available 24/7", ur: "فوری ٹرانسفر — چوبیس گھنٹے دستیاب", ar: "تحويل فوري — متاح ٢٤/٧" },
+
+  /* ---- GALLERY lightbox placeholder ---- */
+  "gal-lb-placeholder": { en: "Photo placeholder — add real images", ur: "فوٹو پلیس ہولڈر — اصل تصاویر شامل کریں", ar: "عنصر نائب للصورة — أضف صوراً حقيقية" },
+
+  /* ---- news bottom info bar ---- */
+  "news-bottom-info": { en: "For more information on any notice, contact the Jamia office directly.", ur: "کسی بھی اعلان کی مزید معلومات کے لیے جامعہ کے دفتر سے براہ راست رابطہ کریں۔", ar: "للمزيد من المعلومات حول أي إشعار، تواصل مباشرة مع مكتب الجامعة." },
+  "news-bottom-contact": { en: "Contact Us →", ur: "رابطہ کریں →", ar: "اتصل بنا →" }
 
 };
 
